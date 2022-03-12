@@ -96,7 +96,7 @@ def render_proj(project):
     print("<div class='proj-div'>")
     print(f"<p>{project[1]}</p>")
     print(
-        f"<iframe width=500 height=500 src='about:blank' id={hash(project[0])}>{project[1]}</iframe>"
+        f"<iframe width=600 height=600 src='about:blank' id={hash(project[0])}>{project[1]}</iframe>"
     )
     print(
         f"<button onclick=\"document.getElementById('{hash(project[0])}').contentWindow.location.replace('{project[0]}'); this.innerHTML = 'Reload demo'; document.getElementById('c{hash(project[0])}').hidden = false;\">Load demo</button>"
@@ -167,14 +167,14 @@ print("</div>")
 print(
     """
 <script>
-    document.onkeydown = function(evt) {
-        evt = evt || window.event;
-        var keyCode = evt.keyCode;
-        if (keyCode >= 37 && keyCode <= 40) {
-            return false;
-        }
-    };
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
 </script>
+
 """
 )
 print("</body>")
