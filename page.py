@@ -9,10 +9,12 @@ projects = [
         "https://editor.p5js.org/goldman-wetzlerj24/full/94Cm43WAB",
         "adjust sliders to see how objects of different masses and velocities will collide",
     ],
+    ["https://editor.p5js.org/VLP_0608/full/sG2s8J7H2", "student eating pretzel"],
     [
         "https://editor.p5js.org/novakovicn24/full/8qrkeZNru",
         "press load, art of astroid colliding",
     ],
+    ["https://editor.p5js.org/swagtime/full/NbcUP6MR5y", "rope/spring system"],
     ["https://editor.p5js.org/justanotherstrange/full/ZKw2nMeSP", "blackjack game"],
     ["https://editor.p5js.org/goldman-wetzlerj24/full/ctiRi3cSy", "wave rider"],
     ["https://editor.p5js.org/swagtime/full/l53WOnM6a", "art: rainbow star"],
@@ -108,28 +110,43 @@ def render_proj(project):
 sys.stdout = open("index.html", "w")
 print("<!DOCTYPE html>")
 print(
-    """<head>
+    """
+    <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <title>programming club projects</title>
     <style>
     body {
-    	background: #c7d9fc;
-    	color: #2b2b2b;
+    	background: #1C1C1D;
+    	color: #FFFFFF;
         font-family: Sans-Serif;
+              font-family: 'JetBrains Mono', monospace;
+
+
     }
     .proj-div {
     	border-radius: 25px;
     	padding: 15px;
     	margin: auto;
     }
+      h1 {
+        font-size: 40px;
+        color: #4EE37E
+      }
     p {
     	font-size: 40px;
-    	font-weight: 600;
     }
     .items-center {
         text-align: center;
     }
+      
+    button {
+        
+    }
     </style>
-</head>"""
+</head>
+    """
 )
 print("<body>")
 print(
@@ -140,6 +157,9 @@ Enjoy!
 """
 )
 print("<div class='items-center'>")
+import random
+
+random.shuffle(projects)
 for proj in projects:
     render_proj(proj)
     print("<BR/>")
