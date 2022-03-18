@@ -89,6 +89,19 @@ projects = [
         "https://editor.p5js.org/swagtime/full/CfA6ixz0s",
         "use left and right arrowkeys to animate this flag",
     ],
+    ["https://editor.p5js.org/swagtime/full/7XmVtb2cb", "3D lorenz attractor!"],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/AzaxXYjNI",
+        "2D lorenz attractor",
+    ],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/8hBQKBdoj",
+        "rope simulation (move the mouse)",
+    ],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/GcbeZN78t",
+        "dynamical flow simulation",
+    ],
 ]
 
 
@@ -96,10 +109,10 @@ def render_proj(project):
     print("<div class='proj-div'>")
     print(f"<p>{project[1]}</p>")
     print(
-        f"<iframe width=600 height=600 src='about:blank' id={hash(project[0])}>{project[1]}</iframe>"
+        f"<iframe width=600 height=600 src='about:blank' id={hash(project[0])}>{project[1]}</iframe><BR/>"
     )
     print(
-        f"<button onclick=\"document.getElementById('{hash(project[0])}').contentWindow.location.replace('{project[0]}'); this.innerHTML = 'Reload demo'; document.getElementById('c{hash(project[0])}').hidden = false;\">Load demo</button>"
+        f"<button onclick=\"document.getElementById('{hash(project[0])}').contentWindow.location.replace('{project[0]}'); this.innerHTML = 'Reload demo'; document.getElementById('c{hash(project[0])}').hidden = false; document.getElementById('{hash(project[0])}').focus();\">Load demo</button>"
     )
     print(
         f"<button hidden id='c{hash(project[0])}' onclick=\"document.getElementById('{hash(project[0])}').contentWindow.location.replace('about:blank')\">Close Demo</button>"
@@ -121,13 +134,11 @@ print(
     	background: #1C1C1D;
     	color: #FFFFFF;
         font-family: Sans-Serif;
-              font-family: 'JetBrains Mono', monospace;
-
-
+        font-family: 'JetBrains Mono', monospace;
+        text-align: center;
     }
     .proj-div {
     	border-radius: 25px;
-    	padding: 15px;
     	margin: auto;
     }
       h1 {
@@ -135,15 +146,36 @@ print(
         color: #4EE37E
       }
     p {
-    	font-size: 40px;
+        font-size: 30px;
+        margin-top:25px;
+        margin-left: 10%;
+        margin-right:10%;
     }
     .items-center {
         text-align: center;
     }
-      
-    button {
-        
+    hr {
+        border: none;
+        margin-top: 30px;
+        border-top: 3px dotted #fff;
+        height: 3px;
+        width: 60%;
     }
+    button {
+        background-color: #4EE37E;
+        color: #1C1C1D;
+        display: inline-block;
+        padding: 15px 32px;
+        border: none;
+        font-family: 'JetBrains Mono', monospace;
+        font-size:15px;
+        border-radius: 12px;
+        transition-duration: 500ms;
+        transition: visibility 0s, opacity 0.5s linear;
+        cursor: pointer;
+    }
+    [hidden] { display: none !important; }
+
     </style>
 </head>
     """
@@ -153,7 +185,9 @@ print(
     """
 <h1>Projects Developed By Programming Club Members:</h1>
 Press the <img src="code.png"/> button to see the code for any project here!
+<BR>
 Enjoy!
+<HR/>
 """
 )
 print("<div class='items-center'>")
