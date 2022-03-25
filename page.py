@@ -1,6 +1,21 @@
 import sys
 
 projects = [
+    ["https://editor.p5js.org/novakovicn24/full/jEZ3VJpeU", "A supernova"],
+    ["https://editor.p5js.org/adam7/full/rb87IYaXw", "Ball expanding, click"],
+    [
+        "https://editor.p5js.org/levant25/full/0fVRAjdTC",
+        "Clickable page for science project",
+    ],
+    ["https://editor.p5js.org/VLP_0608/full/Lw5v688Z1", "Double lorenz attractor!"],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/fgo5AfKfK",
+        "Graph of a differential equation of a spring losing energy",
+    ],
+    [
+        "Realistic cloth simuation",
+        "https://editor.p5js.org/goldman-wetzlerj24/full/7EBUgYo_f",
+    ],
     ["https://editor.p5js.org/fanningo24/full/86awrM6mr", "Just press load"],
     ["https://editor.p5js.org/L0MP/full/-TLcGhmlo", "Use arrow keys to move"],
     ["https://editor.p5js.org/alfandrej23/full/erlS2Cubq", "Tic tac toe"],
