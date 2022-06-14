@@ -13,8 +13,8 @@ projects = [
         "Graph of a differential equation of a spring losing energy",
     ],
     [
-        "Realistic cloth simuation",
         "https://editor.p5js.org/goldman-wetzlerj24/full/7EBUgYo_f",
+        "Realistic cloth simuation",
     ],
     ["https://editor.p5js.org/fanningo24/full/86awrM6mr", "Just press load"],
     ["https://editor.p5js.org/L0MP/full/-TLcGhmlo", "Use arrow keys to move"],
@@ -116,6 +116,38 @@ projects = [
     [
         "https://editor.p5js.org/goldman-wetzlerj24/full/GcbeZN78t",
         "dynamical flow simulation",
+    ],
+    [
+        "https://editor.p5js.org/adam7/full/tzYFyxxWL",
+        "whack-a-mole; click to start",
+    ],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/ag43BZl-b",
+        "ball bouncing in 3d; drag to see all sides",
+    ],
+    [
+        "https://editor.p5js.org/JazzyJasperZ/full/SlsaeoJOQ",
+        "dots an balls; a two player game",
+    ],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/jDkSF_D_zE",
+        "a visualization of 2d spaces with different metrics; drag the slider to change the metric",
+    ],
+    [
+        "https://editor.p5js.org/swagtime/full/cIlkvIxgw",
+        "click and drag to move the ball",
+    ],
+    [
+        "https://editor.p5js.org/goldman-wetzlerj24/full/mc9ALAgSx",
+        "a clone of the balls game; click to start",
+    ],
+    [
+        "https://editor.p5js.org/JazzyJasperZ/full/9sLJ_IkE4",
+        "audio; click and drag to change the pitch",
+    ],
+    [
+        "https://editor.p5js.org/swagtime/full/Llifv2Ptq",
+        "random unicode characters",
     ],
 ]
 
